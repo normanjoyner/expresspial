@@ -1,0 +1,24 @@
+{
+  "name": "expresspial",
+  "version": "0.1.0",
+  "description": "Express middleware for Espial",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/normanjoyner/expresspial.git"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "espial"
+  ],
+  "author": "Norman Joyner <norman.joyner@gmail.com>",
+  "license": "GPLv2",
+  "bugs": {
+    "url": "https://github.com/normanjoyner/expresspial/issues"
+  },
+  "homepage": "https://github.com/normanjoyner/expresspial"
+}
