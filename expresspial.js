@@ -6,17 +6,21 @@ module.exports = function(espial){
             if(!espial.is_master()){
                 var master = espial.get_master();
 
-                var port = req.headers.host.split(":");
-                if(port.length > 1)
-                    port = port[1];
-                else
-                    port = 80;
+                if(master.ip == undefined)
+                    res.send(503);
+                else{
+                    var port = req.headers.host.split(":");
+                    if(port.length > 1)
+                        port = port[1];
+                    else
+                        port = 80;
 
-                var location = [req.protocol, "://", master.ip, ":", port, req.url].join("");
-                res.redirect(307, location);
+                    var location = [req.protocol, "://", master.ip, ":", port, req.url].join("");
+                    res.redirect(307, location);
+                }
             }
             else
-                next();
+                return next();
         }
 
     }
