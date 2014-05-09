@@ -1,0 +1,10 @@
+{
+  "name": "expresspial",
+  "version": "0.1.1",
+  "dependencies": {
+    "lodash": {
+      "version": "2.4.1",
+      "from": "lodash@"
+    }
+  }
+}
