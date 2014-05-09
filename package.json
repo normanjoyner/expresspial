@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/normanjoyner/expresspial/issues"
   },
-  "homepage": "https://github.com/normanjoyner/expresspial"
+  "homepage": "https://github.com/normanjoyner/expresspial",
+  "dependencies": {
+    "lodash": "^2.4.1"
+  }
 }
